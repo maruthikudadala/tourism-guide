@@ -1,0 +1,1054 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>main content</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box; 
+                /* normally foents are goes out side of screen(margin line) ,this tools puts insde of the margine (screen) */
+                font-family: poppins,sans-serif;
+                scroll-behavior: smooth;
+            }
+            header{
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;                
+                padding-top: 20px;
+                padding-left: 120px;display: flex;
+                justify-content: space-between;
+                align-items: center;
+                z-index: 100;
+                background-color: grey;
+            }
+            .logo{
+                font-size: 25px;font-weight: bold;
+                text-decoration: none;
+                color: white;
+            }
+            nav a{
+                font-size: 18px;
+                font-weight: bold;
+                text-decoration: none;
+                color: white;
+                margin-left: 35px;
+                margin-right: 70px;
+                transition: 0.3s;               
+                align-items: center;
+
+            }
+            nav a:hover{
+                color: aqua;
+            }            
+            .h1{
+                margin-top: 80px;
+                margin-bottom: 20px;
+                text-align: center;
+                color: blueviolet;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+            }
+            section{
+                min-height: 100vh;  
+                margin-bottom: 40px;         
+                
+            }
+            .image{
+                width: 100%;
+                height: 550px;
+            }
+            .img-grid{
+                display: grid; 
+                grid-template-columns: 1fr 1fr 1fr ;
+                column-gap: 16px; 
+                row-gap: 40px;
+            }
+   
+            .thumbnail{
+                width: 430px;
+                height: 250px;
+                margin-left: 40px;
+                border: 2px solid black;
+
+                
+            }
+            .video-title{
+                margin-top: 5px; margin-bottom: 12px;
+                font-size: 20px; font-weight: bold;
+                line-height: 20px;
+            }
+            .video-info-grid{
+                display: grid;
+                grid-template-columns: 50px 1fr;
+                margin-left: 40px;
+                border: 1px  wheat;
+                border-style:inset;
+                padding-bottom: 35px;
+                margin-top: -15px;
+                width: 430px;              
+
+            }
+            .stars{
+                
+                display: flex;
+                
+                margin-left: 17px;
+                font-size: 600;
+            }
+            .star{
+                width: 30px;
+                padding-left: 4px;
+                margin-bottom: 50px;
+                              
+            }
+            
+            .price{
+                margin-top: 40px;
+                margin-left: -30px;
+                font-size: 25px;
+                color: #333;
+                }
+                span{
+                    color: #666;
+                    font-size: 1.5rem;
+                    text-decoration: line-through;
+                }
+                .btn{
+                    width: 120px;
+                    margin-left: 20px;                  
+                   text-decoration: none;                   
+                   border: 2px solid black;
+                    padding-top: 8px;
+                    padding-bottom: 8px;
+                    padding-right: 8px;
+                    padding-left: 8px;
+                    border-radius: 5px;
+                    background-color: antiquewhite;
+                    color:black;
+                    font-size: 20px;
+                   font-family:Verdana, Geneva, Tahoma, sans-serif;
+                }
+                .btn:hover{
+                    background-color: red;
+                    opacity: 0.4s;
+                }
+            .small-logo{
+                width: 20px; border-radius: 50px;
+                margin-left: 20px;
+            }
+            .thumbnail-row{margin-bottom: 12px;
+                position: relative;
+            }
+            .absolute{
+                position: absolute;
+                color: whitesmoke;
+                left: 60px;
+                bottom: 30px;
+                font-weight: 600;
+                font-family:Arial, Helvetica, sans-serif;
+            }
+            .video-grid{
+                display: grid; 
+                grid-template-columns: 1fr 1fr 1fr ;
+                column-gap: 10px; 
+                row-gap: 40px;
+                
+            }
+            
+        </style>
+    </head>
+    <body style="background-color: whitesmoke;">
+        <header>
+            <a href="#" class="logo">Travel</a>
+            <nav>
+                <a class="a1" href="#North India">North India</a>
+                <a href="#South India">South India</a>
+                <a href="#East India">East India</a>
+                <a href="#West India">West India</a>
+                <a href="#Central India">Central India</a>
+
+            </nav>
+        </header>
+
+        <h1 class="h1">Explore Top Destinations by Region</h1>
+
+<section id="North India">
+            <div class="video-grid">
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <img class="thumbnail" src="/youtube picture/north india/uttrakand.jpg" alt=""> 
+                        <div class="absolute">UTTARAKAND</div>               
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <img class="small-logo" src="/youtube picture/location-dot-solid.svg" alt="">
+                        </div>
+                        <div class="video-info">
+                            <p class="video-title">
+                                UTTARAKAND
+                            </p>                     
+                        </div>
+                        
+                        <div class="stars">
+                        <img class="star" src="/youtube picture/star.png" alt="">
+                        <img class="star" src="/youtube picture/star.png" alt="">
+                        <img class="star" src="/youtube picture/star.png" alt="">
+                        <img class="star" src="/youtube picture/star.png" alt="">
+                        <img class="star" src="/youtube picture/half star.png" alt="">                        
+                    </div>                        
+                        <div class="price">
+                        $90.00 <span>$120.00</span>
+                        </div>
+                        <a href="./bookForm10.html" class="btn">Book Now</a>                        
+                    </div>                    
+                </div>
+    
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <img class="thumbnail" src="/youtube picture/north india/delhi.jpg" alt=""> 
+                        <div class="absolute">DELHI</div>                
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <img class="small-logo" src="/youtube picture/location-dot-solid.svg" alt="">
+                        </div>
+                        <div class="video-info">
+                            <p class="video-title">
+                                DELHI
+                            </p>
+                        </div>
+                        <div class="stars">
+                            <img class="star" src="/youtube picture/star.png" alt="">
+                            <img class="star" src="/youtube picture/star.png" alt="">
+                            <img class="star" src="/youtube picture/star.png" alt="">
+                            <img class="star" src="/youtube picture/star.png" alt="">
+                            <img class="star" src="/youtube picture/half star.png" alt="">                            
+                        </div>                            
+                            <div class="price">
+                            $90.00 <span>$120.00</span>
+                            </div>
+                            <a href="./bookForm10.html" class="btn">Book Now</a>
+                    </div>
+                </div>
+    
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <img class="thumbnail" src="/youtube picture/north india/himachal pradesh.jpg" alt=""> 
+                        <div class="absolute">HIMACHAL PRADESH</div>                
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <img class="small-logo" src="/youtube picture/location-dot-solid.svg"alt="">
+                        </div>
+                        <div class="video-info">
+                            <p class="video-title">
+                                HIMACHAL PRADESH
+                            </p>
+                        </div>
+                        <div class="stars">
+                            <img class="star" src="/youtube picture/star.png" alt="">
+                            <img class="star" src="/youtube picture/star.png" alt="">
+                            <img class="star" src="/youtube picture/star.png" alt="">
+                            <img class="star" src="/youtube picture/star.png" alt="">
+                            <img class="star" src="/youtube picture/half star.png" alt="">                            
+                        </div>                            
+                            <div class="price">
+                            $90.00 <span>$120.00</span>
+                            </div>
+                            <a href="./bookForm10.html" class="btn">Book Now</a>
+                    </div>
+                </div>
+    
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <img class="thumbnail" src="/youtube picture/north india/jammu and kashmir.jpg" alt="">
+                        <div class="absolute">JAMMU & KASHMIR</div>                 
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <img class="small-logo" src="/youtube picture/location-dot-solid.svg" alt="">
+                        </div>
+                        <div class="video-info">
+                            <p class="video-title">
+                                JAMMU AND KASHMIR
+                            </p>
+                        </div>
+                        <div class="stars">
+                            <img class="star" src="/youtube picture/star.png" alt="">
+                            <img class="star" src="/youtube picture/star.png" alt="">
+                            <img class="star" src="/youtube picture/star.png" alt="">
+                            <img class="star" src="/youtube picture/star.png" alt="">
+                            <img class="star" src="/youtube picture/half star.png" alt="">                            
+                        </div>                            
+                            <div class="price">
+                            $90.00 <span>$120.00</span>
+                            </div>
+                            <a href="./bookForm10.html" class="btn">Book Now</a>
+                    </div>
+                </div>
+    
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <img class="thumbnail" src="/youtube picture/north india/rajastan.jpg" alt=""> 
+                        <div class="absolute">RAJASTAN</div>                
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <img class="small-logo" src="/youtube picture/location-dot-solid.svg" alt="">
+                        </div>
+                        <div class="video-info">
+                            <p class="video-title">
+                                RAJASTAN
+                            </p>
+                        </div>
+                        <div class="stars">
+                            <img class="star" src="/youtube picture/star.png" alt="">
+                            <img class="star" src="/youtube picture/star.png" alt="">
+                            <img class="star" src="/youtube picture/star.png" alt="">
+                            <img class="star" src="/youtube picture/star.png" alt="">
+                            <img class="star" src="/youtube picture/half star.png" alt="">                            
+                         </div>                            
+                            <div class="price">
+                            $90.00 <span>$120.00</span>
+                            </div>
+                            <a href="./bookForm10.html" class="btn">Book Now</a>
+                    </div>
+                </div>
+    
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <img class="thumbnail" src="/youtube picture/north india/ladakh.jpg" alt=""> 
+                        <div class="absolute">LADAKH</div>                
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <img class="small-logo" src="/youtube picture/location-dot-solid.svg" alt="">
+                        </div>
+                        <div class="video-info">
+                            <p class="video-title">
+                                LADAKH
+                            </p>
+                        </div>
+                        <div class="stars">
+                            <img class="star" src="/youtube picture/star.png" alt="">
+                            <img class="star" src="/youtube picture/star.png" alt="">
+                            <img class="star" src="/youtube picture/star.png" alt="">
+                            <img class="star" src="/youtube picture/star.png" alt="">
+                            <img class="star" src="/youtube picture/half star.png" alt="">                            
+                        </div>                            
+                            <div class="price">
+                            $90.00 <span>$120.00</span>
+                            </div>
+                            <a href="./bookForm10.html" class="btn">Book Now</a>
+                    </div>
+                </div>
+
+</section>
+
+
+
+
+<section id="South India">
+            <div class="video-grid">
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <img class="thumbnail" src="/youtube picture/south india/andhra pradesh.jpg" alt="">
+                        <div class="absolute">ANDHRA PRADESH</div>                 
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <img class="small-logo" src="/youtube picture/location-dot-solid.svg" alt="">
+                        </div>
+                        <div class="video-info">
+                            <p class="video-title">
+                                ANDHRA PRADESH
+                            </p>                     
+                        </div>
+                        
+                        <div class="stars">
+                        <img class="star" src="/youtube picture/star.png" alt="">
+                        <img class="star" src="/youtube picture/star.png" alt="">
+                        <img class="star" src="/youtube picture/star.png" alt="">
+                        <img class="star" src="/youtube picture/star.png" alt="">
+                        <img class="star" src="/youtube picture/half star.png" alt="">                        
+                    </div>                        
+                        <div class="price">
+                        $90.00 <span>$120.00</span>
+                        </div>
+                        <a href="./bookForm10.html" class="btn">Book Now</a>                        
+                    </div>                    
+                </div>
+    
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <img class="thumbnail" src="/youtube picture/south india/charminar.jpg" alt="">
+                        <div class="absolute">TELANGANA</div>                 
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <img class="small-logo" src="/youtube picture/location-dot-solid.svg" alt="">
+                        </div>
+                        <div class="video-info">
+                            <p class="video-title">
+                                TELANGANA
+                            </p>
+                        </div>
+                        <div class="stars">
+                            <img class="star" src="/youtube picture/star.png" alt="">
+                            <img class="star" src="/youtube picture/star.png" alt="">
+                            <img class="star" src="/youtube picture/star.png" alt="">
+                            <img class="star" src="/youtube picture/star.png" alt="">
+                            <img class="star" src="/youtube picture/half star.png" alt="">                            
+                        </div>                            
+                            <div class="price">
+                            $90.00 <span>$120.00</span>
+                            </div>
+                            <a href="./bookForm10.html" class="btn">Book Now</a>
+                    </div>
+                </div>
+    
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <img class="thumbnail" src="/youtube picture/south india/tamil nadu.jpg" alt=""> 
+                        <div class="absolute">TAMIL NADU</div>                
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <img class="small-logo" src="/youtube picture/location-dot-solid.svg"alt="">
+                        </div>
+                        <div class="video-info">
+                            <p class="video-title">
+                                TAMIL NADU
+                            </p>
+                        </div>
+                        <div class="stars">
+                            <img class="star" src="/youtube picture/star.png" alt="">
+                            <img class="star" src="/youtube picture/star.png" alt="">
+                            <img class="star" src="/youtube picture/star.png" alt="">
+                            <img class="star" src="/youtube picture/star.png" alt="">
+                            <img class="star" src="/youtube picture/half star.png" alt="">                            
+                        </div>                            
+                            <div class="price">
+                            $90.00 <span>$120.00</span>
+                            </div>
+                            <a href="./bookForm10.html" class="btn">Book Now</a>
+                    </div>
+                </div>
+    
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <img class="thumbnail" src="/youtube picture/south india/karnataka.jpg" alt=""> 
+                        <div class="absolute">KARNATAKA</div>                
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <img class="small-logo" src="/youtube picture/location-dot-solid.svg" alt="">
+                        </div>
+                        <div class="video-info">
+                            <p class="video-title">
+                                KARNATAKA
+                            </p>
+                        </div>
+                        <div class="stars">
+                            <img class="star" src="/youtube picture/star.png" alt="">
+                            <img class="star" src="/youtube picture/star.png" alt="">
+                            <img class="star" src="/youtube picture/star.png" alt="">
+                            <img class="star" src="/youtube picture/star.png" alt="">
+                            <img class="star" src="/youtube picture/half star.png" alt="">                            
+                        </div>                            
+                            <div class="price">
+                            $90.00 <span>$120.00</span>
+                            </div>
+                            <a href="./bookForm10.html" class="btn">Book Now</a>
+                    </div>
+                </div>
+    
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <img class="thumbnail" src="/youtube picture/south india/pondicherry.jpg" alt="">
+                        <div class="absolute">PONDICHERRY</div>                 
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <img class="small-logo" src="/youtube picture/location-dot-solid.svg" alt="">
+                        </div>
+                        <div class="video-info">
+                            <p class="video-title">
+                                PONDICHERRY
+                            </p>
+                        </div>
+                        <div class="stars">
+                            <img class="star" src="/youtube picture/star.png" alt="">
+                            <img class="star" src="/youtube picture/star.png" alt="">
+                            <img class="star" src="/youtube picture/star.png" alt="">
+                            <img class="star" src="/youtube picture/star.png" alt="">
+                            <img class="star" src="/youtube picture/half star.png" alt="">                            
+                         </div>                            
+                            <div class="price">
+                            $90.00 <span>$120.00</span>
+                            </div>
+                            <a href="./bookForm10.html" class="btn">Book Now</a>
+                    </div>
+                </div>
+    
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <img class="thumbnail" src="/youtube picture/south india/kerala.jpg" alt="">
+                        <div class="absolute">KERALA</div>                 
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <img class="small-logo" src="/youtube picture/location-dot-solid.svg" alt="">
+                        </div>
+                        <div class="video-info">
+                            <p class="video-title">
+                                KERALA
+                            </p>
+                        </div>
+                        <div class="stars">
+                            <img class="star" src="/youtube picture/star.png" alt="">
+                            <img class="star" src="/youtube picture/star.png" alt="">
+                            <img class="star" src="/youtube picture/star.png" alt="">
+                            <img class="star" src="/youtube picture/star.png" alt="">
+                            <img class="star" src="/youtube picture/half star.png" alt="">                            
+                        </div>                            
+                            <div class="price">
+                            $90.00 <span>$120.00</span>
+                            </div>
+                            <a href="./bookForm10.html" class="btn">Book Now</a>
+                    </div>
+                </div>
+
+</section>
+
+
+
+
+<section id="East India">
+    <div class="video-grid">
+        <div class="video-preview">
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="/youtube picture/east india/arunachal.jpg" alt=""> 
+                <div class="absolute">ARUNACHAL</div>                
+            </div>
+            <div class="video-info-grid">
+                <div class="channel-picture">
+                    <img class="small-logo" src="/youtube picture/location-dot-solid.svg" alt="">
+                </div>
+                <div class="video-info">
+                    <p class="video-title">
+                        ARUNACHAL
+                    </p>                     
+                </div>
+                
+                <div class="stars">
+                <img class="star" src="/youtube picture/star.png" alt="">
+                <img class="star" src="/youtube picture/star.png" alt="">
+                <img class="star" src="/youtube picture/star.png" alt="">
+                <img class="star" src="/youtube picture/star.png" alt="">
+                <img class="star" src="/youtube picture/half star.png" alt="">                        
+            </div>                        
+                <div class="price">
+                $90.00 <span>$120.00</span>
+                </div>
+                <a href="./bookForm10.html" class="btn">Book Now</a>                        
+            </div>                    
+        </div>
+
+        <div class="video-preview">
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="/youtube picture/east india/assam.jpg" alt="">
+                <div class="absolute">ASSAM</div>                 
+            </div>
+            <div class="video-info-grid">
+                <div class="channel-picture">
+                    <img class="small-logo" src="/youtube picture/location-dot-solid.svg" alt="">
+                </div>
+                <div class="video-info">
+                    <p class="video-title">
+                        ASSAM
+                    </p>
+                </div>
+                <div class="stars">
+                    <img class="star" src="/youtube picture/star.png" alt="">
+                    <img class="star" src="/youtube picture/star.png" alt="">
+                    <img class="star" src="/youtube picture/star.png" alt="">
+                    <img class="star" src="/youtube picture/star.png" alt="">
+                    <img class="star" src="/youtube picture/half star.png" alt="">                            
+                </div>                            
+                    <div class="price">
+                    $90.00 <span>$120.00</span>
+                    </div>
+                    <a href="./bookForm10.html" class="btn">Book Now</a>
+            </div>
+        </div>
+
+        <div class="video-preview">
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="/youtube picture/east india/odissa.jpg" alt="">
+                <div class="absolute">ODISSA</div>                 
+            </div>
+            <div class="video-info-grid">
+                <div class="channel-picture">
+                    <img class="small-logo" src="/youtube picture/location-dot-solid.svg"alt="">
+                </div>
+                <div class="video-info">
+                    <p class="video-title">
+                        ODISSA
+                    </p>
+                </div>
+                <div class="stars">
+                    <img class="star" src="/youtube picture/star.png" alt="">
+                    <img class="star" src="/youtube picture/star.png" alt="">
+                    <img class="star" src="/youtube picture/star.png" alt="">
+                    <img class="star" src="/youtube picture/star.png" alt="">
+                    <img class="star" src="/youtube picture/half star.png" alt="">                            
+                </div>                            
+                    <div class="price">
+                    $90.00 <span>$120.00</span>
+                    </div>
+                    <a href="./bookForm10.html" class="btn">Book Now</a>
+            </div>
+        </div>
+
+        <div class="video-preview">
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="/youtube picture/east india/west bengal.jpg" alt=""> 
+                <div class="absolute">WEST BENGAL</div>                
+            </div>
+            <div class="video-info-grid">
+                <div class="channel-picture">
+                    <img class="small-logo" src="/youtube picture/location-dot-solid.svg" alt="">
+                </div>
+                <div class="video-info">
+                    <p class="video-title">
+                        WEST BENGAL
+                    </p>
+                </div>
+                <div class="stars">
+                    <img class="star" src="/youtube picture/star.png" alt="">
+                    <img class="star" src="/youtube picture/star.png" alt="">
+                    <img class="star" src="/youtube picture/star.png" alt="">
+                    <img class="star" src="/youtube picture/star.png" alt="">
+                    <img class="star" src="/youtube picture/half star.png" alt="">                            
+                </div>                            
+                    <div class="price">
+                    $90.00 <span>$120.00</span>
+                    </div>
+                    <a href="./bookForm10.html" class="btn">Book Now</a>
+            </div>
+        </div>
+
+        <div class="video-preview">
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="/youtube picture/east india/sikkim.jpg" alt=""> 
+                <div class="absolute">SIKKIM</div>                
+            </div>
+            <div class="video-info-grid">
+                <div class="channel-picture">
+                    <img class="small-logo" src="/youtube picture/location-dot-solid.svg" alt="">
+                </div>
+                <div class="video-info">
+                    <p class="video-title">
+                        SIKKIM
+                    </p>
+                </div>
+                <div class="stars">
+                    <img class="star" src="/youtube picture/star.png" alt="">
+                    <img class="star" src="/youtube picture/star.png" alt="">
+                    <img class="star" src="/youtube picture/star.png" alt="">
+                    <img class="star" src="/youtube picture/star.png" alt="">
+                    <img class="star" src="/youtube picture/half star.png" alt="">                            
+                 </div>                            
+                    <div class="price">
+                    $90.00 <span>$120.00</span>
+                    </div>
+                    <a href="./bookForm10.html" class="btn">Book Now</a>
+            </div>
+        </div>
+
+        <div class="video-preview">
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="/youtube picture/east india/meghalaya.jpg" alt="">
+                <div class="absolute">MEGHALAYA</div>                 
+            </div>
+            <div class="video-info-grid">
+                <div class="channel-picture">
+                    <img class="small-logo" src="/youtube picture/location-dot-solid.svg" alt="">
+                </div>
+                <div class="video-info">
+                    <p class="video-title">
+                        MEGHALAYA
+                    </p>
+                </div>
+                <div class="stars">
+                    <img class="star" src="/youtube picture/star.png" alt="">
+                    <img class="star" src="/youtube picture/star.png" alt="">
+                    <img class="star" src="/youtube picture/star.png" alt="">
+                    <img class="star" src="/youtube picture/star.png" alt="">
+                    <img class="star" src="/youtube picture/half star.png" alt="">                            
+                </div>                            
+                    <div class="price">
+                    $90.00 <span>$120.00</span>
+                    </div>
+                    <a href="./bookForm10.html" class="btn">Book Now</a>
+            </div>
+        </div>
+
+</section>
+
+
+
+<section id="West India">
+            <div class="video-grid">
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <img class="thumbnail" src="/youtube picture/west india/goa.jpg" alt="">
+                        <div class="absolute">GOA</div>                 
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <img class="small-logo" src="/youtube picture/location-dot-solid.svg" alt="">
+                        </div>
+                        <div class="video-info">
+                            <p class="video-title">
+                                GOA
+                            </p>                     
+                        </div>
+                        
+                        <div class="stars">
+                        <img class="star" src="/youtube picture/star.png" alt="">
+                        <img class="star" src="/youtube picture/star.png" alt="">
+                        <img class="star" src="/youtube picture/star.png" alt="">
+                        <img class="star" src="/youtube picture/star.png" alt="">
+                        <img class="star" src="/youtube picture/half star.png" alt="">                        
+                    </div>                        
+                        <div class="price">
+                        $90.00 <span>$120.00</span>
+                        </div>
+                        <a href="./bookForm10.html" class="btn">Book Now</a>                        
+                    </div>                    
+                </div>
+    
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <img class="thumbnail" src="/youtube picture/west india/pune.jpg" alt="">
+                        <div class="absolute">PUNE</div>                 
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <img class="small-logo" src="/youtube picture/location-dot-solid.svg" alt="">
+                        </div>
+                        <div class="video-info">
+                            <p class="video-title">
+                                PUNE
+                            </p>
+                        </div>
+                        <div class="stars">
+                            <img class="star" src="/youtube picture/star.png" alt="">
+                            <img class="star" src="/youtube picture/star.png" alt="">
+                            <img class="star" src="/youtube picture/star.png" alt="">
+                            <img class="star" src="/youtube picture/star.png" alt="">
+                            <img class="star" src="/youtube picture/half star.png" alt="">                            
+                        </div>                            
+                            <div class="price">
+                            $90.00 <span>$120.00</span>
+                            </div>
+                            <a href="./bookForm10.html" class="btn">Book Now</a>
+                    </div>
+                </div>
+    
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <img class="thumbnail" src="/youtube picture/west india/maharashtra.jpg" alt=""> 
+                        <div class="absolute">MAHARASTRA</div>                
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <img class="small-logo" src="/youtube picture/location-dot-solid.svg"alt="">
+                        </div>
+                        <div class="video-info">
+                            <p class="video-title">
+                                MAHARASTRA
+                            </p>
+                        </div>
+                        <div class="stars">
+                            <img class="star" src="/youtube picture/star.png" alt="">
+                            <img class="star" src="/youtube picture/star.png" alt="">
+                            <img class="star" src="/youtube picture/star.png" alt="">
+                            <img class="star" src="/youtube picture/star.png" alt="">
+                            <img class="star" src="/youtube picture/half star.png" alt="">                            
+                        </div>                            
+                            <div class="price">
+                            $90.00 <span>$120.00</span>
+                            </div>
+                            <a href="./bookForm10.html" class="btn">Book Now</a>
+                    </div>
+                </div>
+    
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <img class="thumbnail" src="/youtube picture/west india/gujarath.jpg" alt=""> 
+                        <div class="absolute">GUJARATH</div>                
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <img class="small-logo" src="/youtube picture/location-dot-solid.svg" alt="">
+                        </div>
+                        <div class="video-info">
+                            <p class="video-title">
+                                GUJARATH
+                            </p>
+                        </div>
+                        <div class="stars">
+                            <img class="star" src="/youtube picture/star.png" alt="">
+                            <img class="star" src="/youtube picture/star.png" alt="">
+                            <img class="star" src="/youtube picture/star.png" alt="">
+                            <img class="star" src="/youtube picture/star.png" alt="">
+                            <img class="star" src="/youtube picture/half star.png" alt="">                            
+                        </div>                            
+                            <div class="price">
+                            $90.00 <span>$120.00</span>
+                            </div>
+                            <a href="./bookForm10.html" class="btn">Book Now</a>
+                    </div>
+                </div>
+    
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <img class="thumbnail" src="/youtube picture/west india/gir national park.jpg" alt="">
+                        <div class="absolute">GIR NATIONAL PARK</div>                 
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <img class="small-logo" src="/youtube picture/location-dot-solid.svg" alt="">
+                        </div>
+                        <div class="video-info">
+                            <p class="video-title">
+                                GIR NATIONAL PARK
+                            </p>
+                        </div>
+                        <div class="stars">
+                            <img class="star" src="/youtube picture/star.png" alt="">
+                            <img class="star" src="/youtube picture/star.png" alt="">
+                            <img class="star" src="/youtube picture/star.png" alt="">
+                            <img class="star" src="/youtube picture/star.png" alt="">
+                            <img class="star" src="/youtube picture/half star.png" alt="">                            
+                         </div>                            
+                            <div class="price">
+                            $90.00 <span>$120.00</span>
+                            </div>
+                            <a href="./bookForm10.html" class="btn">Book Now</a>
+                    </div>
+                </div>
+    
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <img class="thumbnail" src="/youtube picture/west india/dadra and nagar haveli.jpg" alt=""> 
+                        <div class="absolute">DADRA & NAGAR HAVELI</div>                
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <img class="small-logo" src="/youtube picture/location-dot-solid.svg" alt="">
+                        </div>
+                        <div class="video-info">
+                            <p class="video-title">
+                                DADRA & NAGAR HAVELI
+                            </p>
+                        </div>
+                        <div class="stars">
+                            <img class="star" src="/youtube picture/star.png" alt="">
+                            <img class="star" src="/youtube picture/star.png" alt="">
+                            <img class="star" src="/youtube picture/star.png" alt="">
+                            <img class="star" src="/youtube picture/star.png" alt="">
+                            <img class="star" src="/youtube picture/half star.png" alt="">                            
+                        </div>                            
+                            <div class="price">
+                            $90.00 <span>$120.00</span>
+                            </div>
+                            <a href="./bookForm10.html" class="btn">Book Now</a>
+                    </div>
+                </div>
+
+</section>
+
+
+
+
+<section id="Central India">
+            <div class="video-grid">
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <img class="thumbnail" src="/youtube picture/central india/bhopal.jpg" alt=""> 
+                        <div class="absolute">BHOPAL</div>                
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <img class="small-logo" src="/youtube picture/location-dot-solid.svg" alt="">
+                        </div>
+                        <div class="video-info">
+                            <p class="video-title">
+                                BHOPAL
+                            </p>                     
+                        </div>
+                        
+                        <div class="stars">
+                        <img class="star" src="/youtube picture/star.png" alt="">
+                        <img class="star" src="/youtube picture/star.png" alt="">
+                        <img class="star" src="/youtube picture/star.png" alt="">
+                        <img class="star" src="/youtube picture/star.png" alt="">
+                        <img class="star" src="/youtube picture/half star.png" alt="">                        
+                    </div>                        
+                        <div class="price">
+                        $90.00 <span>$120.00</span>
+                        </div>
+                        <a href="./bookForm10.html" class="btn">Book Now</a>                        
+                    </div>                    
+                </div>
+    
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <img class="thumbnail" src="/youtube picture/central india/chattisgar.jpg" alt=""> 
+                        <div class="absolute">CHATTISGAR</div>                
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <img class="small-logo" src="/youtube picture/location-dot-solid.svg" alt="">
+                        </div>
+                        <div class="video-info">
+                            <p class="video-title">
+                                CHATTISGAR
+                            </p>
+                        </div>
+                        <div class="stars">
+                            <img class="star" src="/youtube picture/star.png" alt="">
+                            <img class="star" src="/youtube picture/star.png" alt="">
+                            <img class="star" src="/youtube picture/star.png" alt="">
+                            <img class="star" src="/youtube picture/star.png" alt="">
+                            <img class="star" src="/youtube picture/half star.png" alt="">                            
+                        </div>                            
+                            <div class="price">
+                            $90.00 <span>$120.00</span>
+                            </div>
+                            <a href="./bookForm10.html" class="btn">Book Now</a>
+                    </div>
+                </div>
+    
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <img class="thumbnail" src="/youtube picture/central india/kanha national park.jpg" alt="">
+                        <div class="absolute">KANHA NATIONAL PARK</div>                 
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <img class="small-logo" src="/youtube picture/location-dot-solid.svg"alt="">
+                        </div>
+                        <div class="video-info">
+                            <p class="video-title">
+                                KANHA NATIONAL PARK
+                            </p>
+                        </div>
+                        <div class="stars">
+                            <img class="star" src="/youtube picture/star.png" alt="">
+                            <img class="star" src="/youtube picture/star.png" alt="">
+                            <img class="star" src="/youtube picture/star.png" alt="">
+                            <img class="star" src="/youtube picture/star.png" alt="">
+                            <img class="star" src="/youtube picture/half star.png" alt="">                            
+                        </div>                            
+                            <div class="price">
+                            $90.00 <span>$120.00</span>
+                            </div>
+                            <a href="./bookForm10.html" class="btn">Book Now</a>
+                    </div>
+                </div>
+    
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <img class="thumbnail" src="/youtube picture/central india/khajuraho.jpg" alt=""> 
+                        <div class="absolute">KHAJURAHO</div>                
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <img class="small-logo" src="/youtube picture/location-dot-solid.svg" alt="">
+                        </div>
+                        <div class="video-info">
+                            <p class="video-title">
+                                KHAJURAHO
+                            </p>
+                        </div>
+                        <div class="stars">
+                            <img class="star" src="/youtube picture/star.png" alt="">
+                            <img class="star" src="/youtube picture/star.png" alt="">
+                            <img class="star" src="/youtube picture/star.png" alt="">
+                            <img class="star" src="/youtube picture/star.png" alt="">
+                            <img class="star" src="/youtube picture/half star.png" alt="">                            
+                        </div>                            
+                            <div class="price">
+                            $90.00 <span>$120.00</span>
+                            </div>
+                            <a href="./bookForm10.html" class="btn">Book Now</a>
+                    </div>
+                </div>
+    
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <img class="thumbnail" src="/youtube picture/central india/madhya pradesh.jpg" alt="">
+                        <div class="absolute">MADHYA PRADESH</div>                 
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <img class="small-logo" src="/youtube picture/location-dot-solid.svg" alt="">
+                        </div>
+                        <div class="video-info">
+                            <p class="video-title">
+                                MADHYA PRADESH
+                            </p>
+                        </div>
+                        <div class="stars">
+                            <img class="star" src="/youtube picture/star.png" alt="">
+                            <img class="star" src="/youtube picture/star.png" alt="">
+                            <img class="star" src="/youtube picture/star.png" alt="">
+                            <img class="star" src="/youtube picture/star.png" alt="">
+                            <img class="star" src="/youtube picture/half star.png" alt="">                            
+                         </div>                            
+                            <div class="price">
+                            $90.00 <span>$120.00</span>
+                            </div>
+                            <a href="./bookForm10.html" class="btn">Book Now</a>
+                    </div>
+                </div>
+    
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <img class="thumbnail" src="/youtube picture/central india/ujjain.jpg" alt="">  
+                        <div class="absolute">UJJAIN</div>               
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <img class="small-logo" src="/youtube picture/location-dot-solid.svg" alt="">
+                        </div>
+                        <div class="video-info">
+                            <p class="video-title">
+                                UJJAIN
+                            </p>
+                        </div>
+                        <div class="stars">
+                            <img class="star" src="/youtube picture/star.png" alt="">
+                            <img class="star" src="/youtube picture/star.png" alt="">
+                            <img class="star" src="/youtube picture/star.png" alt="">
+                            <img class="star" src="/youtube picture/star.png" alt="">
+                            <img class="star" src="/youtube picture/half star.png" alt="">                            
+                        </div>                            
+                            <div class="price">
+                            $90.00 <span>$120.00</span>
+                            </div>
+                            <a href="./bookForm10.html" class="btn">Book Now</a>
+                    </div>
+                </div>
+
+</section>
+
+    </body>
+</html>

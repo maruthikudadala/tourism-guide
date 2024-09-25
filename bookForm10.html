@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Booking Form</title>
+        <style>
+            body{
+                background: url(/images/background/background2.jpg) no-repeat;
+                background-position: center;
+                /* background-size: cover; */
+            }
+            .booking-form-box{
+               width: 400px;
+               height: 800px;
+               border: 2px solid white;
+               margin: 100px 600px;
+               font-size: 20px;
+            }
+            .radio-btn{
+                margin: 0px 20px ;
+            }
+            .radio-btn .btn{
+                margin: 10px 10px 20px 0px;
+                box-shadow: none;
+            }            
+            .radio-btn span{
+                color: white;
+                margin-right: 5px;
+                font-size: 18px;
+                
+            }
+             .booking-form{
+               padding-left: 20px;
+               
+                
+            }
+            .form-control{
+                color: white;
+                font-size: 18px;
+                margin-bottom: 20px;
+                border: 1px solid white;
+                border-radius: 0;
+                background: transparent;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                padding-left: 40px;
+                padding-right: 40px;
+                text-align: center;
+            }
+             .booking-form label{                
+                font-size: 30px; 
+                              
+            }
+            input::placeholder{
+                color: white;
+                font-size: 20px;
+                font-weight: 600; 
+                
+            }
+            .input-grp{
+                width: 180px;
+                
+            }
+            
+            .custom-select{
+                color: white;
+                font-size: 12px;
+                border: 1px solid white;
+                box-shadow: none;
+                border-radius: 0;
+                background: transparent;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                padding-left: 40px;
+                padding-right: 40px;
+                text-align: center;
+                margin-bottom: 30px;
+           } 
+           .custom-select option{
+                color: #333;               
+        
+            }
+           .last-btn{
+            width: 100%;
+            padding: 9px 0;
+            font-size: 18px;
+            border: 1px solid white;
+            border-radius: 0;
+            background: transparent;
+            margin-left: 110px;
+
+           }
+           .last-btn:hover{
+            background: white;
+            color: black;
+            transition: 0.5s;
+           }
+
+        </style>
+    </head>
+   <body>
+    <div class="booking-form-box">
+        <div class="radio-btn">
+            <input type="radio" class="btn" name="check" id="" checked="checked"><span>Roundtrip</span>
+            <input type="radio" class="btn" name="check" id="" ><span>One Way</span>
+            <input type="radio" class="btn" name="check" id="" ><span>Multy-city</span>
+        </div>
+
+        <div class="booking-form">
+            <label for="">Flying From:</label><br><input type="text" class="form-control" placeholder="City or airport"><br>
+            <label for="">Flying To:</label><br><input type="text" class="form-control" placeholder="City or airport">
+
+            <div class="input-grp">
+                <label for="">Departuring:</label><br><input type="date" class="form-control">
+            </div>
+            <div class="input-grp">
+                <label for="">Returning:</label><input type="date" class="form-control">
+            </div>
+            <div class="input-grp">
+                <label for="">Adults:</label><input type="number" class="form-control " value="1">
+            </div>
+            <div class="input-grp">
+                <label for="">Children:</label><input type="number" class="form-control" value="0">
+            </div>
+
+            <div class="input-grp">
+                <label for="">Travel Class</label>
+                <select name="" id="" class="custom-select">
+                    <option value="1">Economy Class</option>
+                    <option value="2">Business Class</option>
+                </select>
+            </div>
+
+            <div class="input-grp">
+                <button type="button" class="last-btn">Show Flights</button>
+            </div>
+
+        </div>
+
+
+    </div>
+   </body>
+</html>

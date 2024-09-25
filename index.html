@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tourism web site</title>
+        
+        <style>
+             .left-section{
+                display: flex;
+                align-items: center;
+            }
+            .hamburger-menu{
+                height: 50px;
+                margin-left: 24px;
+                margin-right: 24px;
+            }
+            .tronix-logo{
+                height: 50px;
+            }
+            .tronix-logo:hover{
+                box-shadow: 5px 5px 10px rgba(0,0,0,0.05)
+            }
+            .middle-section{
+                
+                flex: 1;
+                margin-left: 70px;
+                margin-right: 35px;
+                max-width: 500px;
+                display: flex;
+                align-items: center;
+            }
+            .search-bar{
+                flex: 1;
+                height: 36px;
+                font-size: 16px;
+                border-width: 1px;
+                border-style: solid;
+                border-color: rgb(192,192,192);
+                border-radius: 2px;
+                box-shadow: inset 1px 2px 3px rgba(0,0,0,0.05);
+                width: 0;
+                padding-left: 10px;
+            }
+            .search-bar::placeholder{
+                font-family: Roboto,arial;
+                font-size: 20px;
+            }
+            .search-button{
+                height: 40px;
+                width: 66px;
+                background-color: rgb(240,240,240);
+                border-width: 1px;
+                border-style: solid;
+                border-color: rgb(192,192,192);
+                margin-right: 10px;
+                margin-left: -1px;
+            }
+            .search-icon{
+                height: 25px;
+                margin-top: 4px;
+            }
+            .voice-search-button{
+                width: 40px;
+                height: 40px;
+                border: none;
+                border-radius: 20px;
+                background-color: rgb(245,245,245);
+            }
+            .voice-search-button:hover{
+                box-shadow: 5px 5px 10px rgba(0,0,0,0.05)
+            }
+            .voice-search-icon{
+                height: 24px;
+                margin-top: 4px;                
+            }        
+            .right-section{
+                width: 550px;
+                margin-right: 20px;
+                display: flex;
+                align-items: center;   
+                justify-content: space-between;
+                flex-shrink: 0;
+                column-gap: 20px;
+                /* flex-direction: row; */
+                font-size: 18px;
+                font-weight: bold;
+                font-family: Arial, Helvetica, sans-serif;
+                cursor: pointer;
+                
+            }
+            .right-section p a{
+                text-decoration: none;
+                color: black;
+            }
+           #p1:hover{
+                border-bottom: 4px solid #000;
+                transition: 0.4s;
+            }
+            #p2 a{
+                border-radius: 10px;
+                padding: 12px 20px;
+                border: 2px solid #ff0000; 
+                text-decoration: none;           
+            }
+            #p2 a:hover{
+                background-color: aqua;
+                transition: 0.4s;
+                text-decoration: underline;
+            }
+            
+            h1{
+                display: block;
+                font-style: italic; 
+                font-size: 40px;
+                margin-bottom: 1px;
+                line-height: 50px;
+            }
+            strong{
+                color: orangered;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 40px;
+            }
+            p{
+               
+                margin-top: 0px;
+               
+            }
+            .head{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                height: 55px;
+                /* text-align: center;
+                display: block; */
+            }
+            .main-head{
+                display: block;
+                text-align: center;
+                
+            }
+            .image{
+                width: 100%;
+                height: 550px;
+            }
+            .img-grid{
+                display: grid; 
+                grid-template-columns: 1fr 1fr 1fr ;
+                column-gap: 16px; 
+                row-gap: 40px;
+            }
+            .img-para{
+                margin-top: 20px;
+                color: rgb(57, 37, 117);
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 40px;
+                text-align: center;
+                margin-bottom: 20px;
+                text-decoration: underline;
+            }
+            .thumbnail{
+                width: 350px;
+                height: 200px;
+                padding-left: 20px;
+               
+            }
+ 
+            .video-title{
+                margin-top: 2px; margin-bottom: 12px;
+                font-size: 14px; font-weight: bold;
+                line-height: 20px;
+                cursor: pointer;
+            }
+            .video-title a{
+                text-decoration: none;
+            }
+            .video-title:hover{
+                color: #ff0000;
+            }
+            .video-info-grid{
+                display: grid;
+                grid-template-columns: 50px 1fr;
+                padding-left: 20px;
+
+            }
+            .profile-picture{
+                width: 40px; border-radius: 50px;
+            }
+            .thumbnail-row{margin-bottom: 12px;
+                
+            }
+            .video-grid{
+                display: grid; 
+                grid-template-columns: 1fr 1fr 1fr ;
+                column-gap: 16px; 
+                row-gap: 40px;
+                
+            }
+            .link {
+                color: white;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 30px;
+                text-align: center;
+                margin-bottom: 20px;
+                text-decoration:none;            
+                margin-right: -900px;             
+                
+            }
+            .link-page.link{
+                text-decoration: none;
+                
+            }
+            .link:hover{
+                color: chartreuse;
+                opacity: 0.4s;
+            }
+         
+        </style>
+    </head>
+    <body style="background-color: rgba(228, 239, 239, 0.215);">
+       <div class="head">
+
+        <div class="left-section">
+            <img class="hamburger-menu" src="/youtube picture/bars-solid.svg" alt="">
+            <img class="tronix-logo" src="/youtube picture/tronix-logo.webp" alt="">
+        </div>
+
+        <div class="middle-section">
+            <input  class="search-bar" type="text" placeholder="search">
+            <button class="search-button">
+                <img class="search-icon" src="/youtube picture/magnifying-glass-solid.svg" alt="">
+            </button>
+            <button class="voice-search-button">
+                <img class="voice-search-icon" src="/youtube picture/microphone-solid.svg" alt="">
+            </button>
+        </div>
+
+        <div class="right-section">
+           <p id="p1">HOME</p>
+           <p id="p1"><a href="./trainproj.html">TRAVEL BOOKS</a> </p>
+           <P id="p1"><a href="./contactUs.html">CONTACT US</a> </P>
+           <P id="p1">ABOUT</P>
+           <p id="p2"><a href="./loginProj9.html">log In</a> </p>
+        </div>
+    </div>
+
+    
+    <div class="main-head">
+        <h1>Let us plan you a <br>
+            perfect <strong>India Holiday</strong>
+        </h1>
+        <p >Custom-Crafted Tour Packages for Unforgettable Holiday Experiences in India.</p>
+       </div>
+    </div>
+        
+        <img class="image" src="/youtube picture/tag mahal.jpg" alt="">
+
+        <p class="img-para">Most Popular Holiday trips</p>
+
+        <div class="video-grid">
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="/youtube picture/wildlife.jpg" alt="">                
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="/youtube picture/lion.png" alt="">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">
+                          <a href="./wildLifeProj3.html">WILDLIFE</a>  
+                        </p>                     
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="/youtube picture/beachs.jpg" alt="">                
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="/youtube picture/beach-chair.png" alt="">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">
+                           <a href="./BeachProj8.html">BEACHES</a> 
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="/youtube picture/hill stations.jpg" alt="">                
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="/youtube picture/hill.png" alt="">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">
+                          <a href="./hillstaionProj7.html">HILL STATIONS</a>  
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="/youtube picture/heritage.jpg" alt="">                
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="/youtube picture/building.png" alt="">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">
+                          <a href="./heritageProj4.html">HERITAGE</a>  
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="/youtube picture/trekking.jpg" alt="">                
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="/youtube picture/hiking.png" alt="">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">
+                           <a href="./trekkingproj5.html">TREKKING</a> 
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="/youtube picture/pilgrimage.jpg" alt="">                
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="/youtube picture/pilgrimage.png" alt="">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">
+                           <a href="./pilgrimageProj6.html">PILGRIMAGE</a> 
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="link-page">
+           <p class="link"> <a href="/tourismplaces.html"> Explore Top  Region</a></p>
+        </div>
+    </body>
+</html>

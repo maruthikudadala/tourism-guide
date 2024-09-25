@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact Us</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: sans-serif;
+            }
+             body{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 100vh;
+                background: url(/images/background/background6.jpg) no-repeat;
+                background-position: center;
+            }
+            .container{
+                width: 700px;
+                height: 430px;
+                background: transparent;
+                border: 2px solid rgba(255,255,255,0.2);
+                backdrop-filter: blur(20px);
+                box-shadow: 0 0 10px rgba(0,0,0,0.2);
+                color: white;
+                border-radius: 10px;
+                padding: 30px 40px;
+                display: flex;
+                justify-content: center;
+            }
+            .container form h1{
+                color: white;
+                font-weight: bold;
+                margin-top: 20px;
+                width: 500px;
+                text-align: center;
+            }
+            .container form input{
+                width: 290px;
+                height: 40px;
+                padding-left: 10px;
+                outline: none;
+                border: none;
+                font-size: 15px;
+                margin-bottom: 10px;
+                background: none;
+                border-bottom: 2px solid white;
+                margin-right: 16px;
+            }
+            .container form input::placeholder{
+                color: white;
+            }
+            .container form h4{
+                color: white;
+                font-weight: 300;
+                width: 600px;
+                margin-top: 20px;
+            }
+            .container form textarea{
+                background: none;
+                border: none;
+                border-bottom: 2px solid white;
+                color: white;
+                font-weight: 200px;
+                font-size: 15px;
+                padding: 10px;
+                outline: none;
+                min-width: 600px;
+                max-width: 600px;
+                min-height: 80px;
+                max-height: 80px;
+            }
+            /* textarea::-webkit-scrollbar{
+                width: 1em;
+            }
+            textarea::-webkit-scrollbar-thumb{
+                background-color: rgba(194,194,194,0.7);
+            } */
+            .container form #button{
+                border: none;
+                background: white;
+                border-radius: 5px;
+                margin-top: 30px;
+                font-weight: 600;
+                font-size: 20px;
+                color: #333;
+                width: 100px;
+                padding: 0;
+                margin-left: 250px;
+                
+                transition: 0.3s;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <form action="">
+                <h1>CONTACT US</h1>
+                <input id="firstname" type="text" placeholder="First Name" required>
+                <input id="lastname" type="text" placeholder="Last Nmae" required>
+                <input type="email" name="" id="email" placeholder="Email" required>
+                <input id="mobile" type="text" placeholder="Mobile" required>
+                <h4>Type your Massage Here..</h4>
+                <textarea name="" required></textarea>
+                <input type="submit" value="send" id="button">
+            </form>
+
+        </div>
+    </body>
+</html>
